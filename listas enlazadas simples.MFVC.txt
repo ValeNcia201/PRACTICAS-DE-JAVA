@@ -1,0 +1,62 @@
+#PRACTICA DE CONJUNTOS
+#Autor - Maria Fernanda Valencia
+#Autor - mafervc004@gmail.com
+
+public class Nodo {
+    String info;
+    Nodo next;
+
+    public Nodo() {
+       next = null;
+
+    }
+
+     public Nodo(String info) {
+        this.info = info;
+        next = null ;
+     
+     }
+}
+
+__________________________________________________________________________________________________________________
+
+public class Lista {
+   Nodo primero;
+
+   public Lista (){
+    primero = null;
+}
+
+   public void insertar (String dato) {
+   Nodo temp = new Nodo (info:dato);
+   temp.next = primero;
+   primero = temp;
+   
+   }
+  
+   public.void visualizar () {
+      Nodo n;
+      n= primero;
+      while(n!= null){
+          System.out.println(x: n.info);
+           n = n.next;
+      }
+   }
+}
+
+______________________________________________________________________________--------------------------------
+
+public class NodoLista {
+ 
+   public static void main(String []  args) {
+      Lista list = new Lista() ;
+      String dato ="";
+      Scanner sc= new Scanner (source: System.in) ;
+      while (!dato.equalsIgnoreCase(anotherString:"fin") ) {
+         dato = sc.nextLine();
+        if(!dato.equalsIgnoreCase(anotherString: "fin") ) 
+         list.insertar(dato);
+      }
+      list.visualizar();
+    }
+}
